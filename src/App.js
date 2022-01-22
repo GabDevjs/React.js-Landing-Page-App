@@ -5,7 +5,8 @@ import Feature from "./Components/Feature";
 import Navbar from "./Components/Navbar";
 import Presentation from "./Components/Presentation";
 import AboutImage from './images/about.png';
-import Download from './images/download.png'
+import Download from './images/download.png';
+import './App.css'
 
 function App() {
   return (
