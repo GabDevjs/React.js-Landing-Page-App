@@ -55,6 +55,7 @@ const AboutText = styled.div`
     &:hover{
       background-color: rgb(0, 132, 255);
       transition: all ease 0.3s;
+      box-shadow: 10px 10px 30px rgba(2, 238, 255, 0.336);
       color: #ffffff;
     }
   }

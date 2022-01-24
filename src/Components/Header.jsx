@@ -61,13 +61,13 @@ const HomeButton = styled.div`
 	justify-content: center;
   align-items: center;
   background-color: #00b7ff;
-  box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.336);
   border-radius: 10px;
 	color:#ffffff;
 
   &:hover{
     background-color: #0099ff;
     transition: all ease 0.5s;
+    box-shadow: 10px 10px 30px rgba(2, 238, 255, 0.336);
     color: #ffffff;
   }
 
