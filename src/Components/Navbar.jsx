@@ -13,11 +13,15 @@ const Navbar = () => {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: transparent;
+    background: transparent;
+    backdrop-filter: blur(15px);
     transition: 0.6s ease-in-out;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.02);
+
     @media (max-width: 1100px) {
       justify-content: space-between;
       height: 65px;
+      background-color: #fff;
       padding: 0px 30px;
     }
   `;
@@ -37,6 +41,7 @@ const Navbar = () => {
     const Menu = styled.div`
     display: flex;
     @media (max-width: 1100px) {
+      display: none;
       position: absolute;
       top: 65px;
       left: 0px;
@@ -107,7 +112,7 @@ const Navbar = () => {
     font-family: calibri;
     height: 40px;
     line-height: 43px;
-    margin: 3px;
+    margin: 15px;
     padding: 0px 22px;
     display: flex;
     font-size: 0.9rem;
@@ -136,26 +141,17 @@ const Navbar = () => {
   `;
 
     const MenuResponsive = styled.div`
+    display: flex;
     @media (max-width: 1100px) {
+      display: block;
       width: 100%;
     }
   `;
 
-    //Back
-    /* const [Nav, setNav] = useState(false);
-    const changeBack = () => {
-        if (window.scrollY >= 50) {
-            setNav(true);
-        } else {
-            setNav(false);
-        }
-    };
-    window.addEventListener("scroll", changeBack);
- */
     return (
-        <Nav>
+        <Nav to='/'>
             <Logo>
-                <h1>
+                <h1 to='/'>
                     <span>Logo</span>.App
                 </h1>
             </Logo>
