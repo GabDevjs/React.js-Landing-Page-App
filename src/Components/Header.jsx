@@ -12,7 +12,7 @@ const Main = styled.div`
   background-image: url(${Back});
 
   @media (max-width:1190px){
-    background-size: 100% !important;
+    background-size: 1150px !important;
   }
 
   @media (max-width:970px){
@@ -52,6 +52,10 @@ const Name = styled.div`
   @media (max-width:970px){
     margin: auto;
 	}
+
+  @media (max-width:600px){
+    width: 60%;
+  }
 `;
 
 const HomeButton = styled.div`
@@ -67,7 +71,7 @@ const HomeButton = styled.div`
   &:hover{
     background-color: #0099ff;
     transition: all ease 0.5s;
-    box-shadow: 10px 10px 30px rgba(2, 238, 255, 0.336);
+    box-shadow: 15px 10px 30px rgba(2, 238, 255, 0.336);
     color: #ffffff;
   }
 

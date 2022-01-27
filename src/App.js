@@ -5,8 +5,8 @@ import Feature from "./Components/Feature";
 import Presentation from "./Components/Presentation";
 import AboutImage from './images/about.png';
 import Download from './images/download.png';
-import './App.css'
 import Header from "./Components/Header";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <About image={AboutImage} title='Comers With All You Neved For Dally Life' button='Get The App' />
       <Presentation />
       <About image={Download} title='Download And Get the App Now' button='Download' />
+      <Contact/>
     </div>
   );
 }
